@@ -9,32 +9,38 @@ export const ABOUT_TEXT = `I am a blockchain enthusiast with a year of hands-on 
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "May 2024 - Present",
+    role: "Blockchain Intern",
+    company: "SoluLab",
+    description: `■ Design and implement smart contracts on blockchain platforms like Ethereum, Binance Smart Chain, and Polygon.
+■ Ensure the security and efficiency of smart contracts through thorough testing.
+■ Implement and deploy decentralized applications (DApps) with secure and    efficient smart contract logic.
+■ Implement token standards like ERC-20, ERC1155 and ERC-721.
+■  Create and manage tokenization processes for various assets, including fungible and non-fungible tokens. Integrate Web3 technologies into traditional web applications.
+■ Develop APIs for seamless communication between blockchain and external application`,
+    technologies: ["Solidity", "Javascript", "React.js","Node.js", "mongoDB"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "Jul 2021 - Aug 2023",
+    role: "Blockchain and Cybersecurity Blogger",
+    company: "HackTheTech",
+    description: ` ■ Platform sharing insights, news, and updates on blockchain technology trends.
+ ■ Involved in database administration and website design, and built the logic for a streamlined ad-serving platform that scaled.`,
+    technologies: ["HTML", "CSS", "React.js"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "May 2023 - Jun 2023",
+    role: "Summer Intern",
+    company: "Hindustan Aeronautics Limited, Sunabeda",
+    description: `■ Worked on Sukhoi Saturn AL-31 engine and its components.`,
+    technologies: [],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "May 2022 - Jun 2022",
+    role: "Vocational Trainee",
+    company: "National Aluminium Company Limited",
+    description: `■ Managed databases and improved feedback system.`,
+    technologies: [],
   },
 ];
 
@@ -70,7 +76,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Damanjodi, Koraput, Odisha, 763008 ",
+  phoneNo: "+91 8249325154 ",
+  email: "ayushnayak1832@gmail.com",
 };

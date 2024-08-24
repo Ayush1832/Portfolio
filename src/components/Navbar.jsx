@@ -13,15 +13,6 @@ const Navbar = () => {
         />
       </div>
       <div className="m-8 flex items-center justify-center gap-8 text-2xl text-white">
-       
-        <Link
-          to="about-section"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer hover:text-purple-400 font-light"
-        >
-          About Me
-        </Link>
         <Link
           to="projects-section"
           smooth={true}
@@ -39,7 +30,15 @@ const Navbar = () => {
           Experience
         </Link>
 
-    
+        <Link
+          to="contact-section"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer hover:text-purple-400 font-light"
+        >
+          Contact Me
+        </Link>
+
         <a
           href="https://www.linkedin.com/in/ayushh-nayak/"
           target="_blank"
