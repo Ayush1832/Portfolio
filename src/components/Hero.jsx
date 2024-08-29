@@ -55,7 +55,7 @@ const Hero = () => {
               style={{ width: "500px", height: "auto", marginLeft: "20px" }}
             />
             <a
-              href="https://example.com/resume" // Replace with the URL you want to link to
+              href="https://drive.google.com/file/d/1rk_eBHO4aboYTqQf7AeqFBJMrqTPz7hF/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center px-4 py-2 bg-purple-400 text-white rounded-md shadow-md hover:bg-purple-600 ml-40"
