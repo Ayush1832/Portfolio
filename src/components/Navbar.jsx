@@ -14,20 +14,21 @@ const Navbar = () => {
       </div>
       <div className="m-8 flex items-center justify-center gap-8 text-2xl text-white">
         <Link
-          to="projects-section"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer hover:text-purple-400 font-light"
-        >
-          Projects
-        </Link>
-        <Link
           to="experience-section"
           smooth={true}
           duration={500}
           className="cursor-pointer hover:text-purple-400 font-light"
         >
           Experience
+        </Link>
+
+        <Link
+          to="projects-section"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer hover:text-purple-400 font-light"
+        >
+          Projects
         </Link>
 
         <Link
