@@ -52,7 +52,7 @@ export const PROJECTS = [
     description: "Developed a decentralized staking application that allows users to lock their tokens in a smart contract. Implemented reward mechanisms to incentivize long-term participation and token holding. Integrated secure contract management and real-time staking status updates. Utilized Solidity and Web3 technologies to ensure transparency and efficiency in the staking process.",
     technologies: ["Solidity", "Javascript", "Hardhat", "Ethers.js", "React", "TailwindCSS"],
     demoLink: "https://stake-dapp-ayush.netlify.app/",
-    githubLink: "https://github.com/username/repo",
+    githubLink: "https://github.com/Ayush1832/Staking-Dapp",
   },
   {
     title: "AI NFT Generator",
@@ -60,7 +60,7 @@ export const PROJECTS = [
     description:  "Developed a full-stack blockchain application for generating AI-based images, uploading them to IPFS via NFT.Storage, and minting NFTs on Ethereum. Integrated Stable Diffusion AI model from Hugging Face for image generation based on user input. Utilized React.js, Solidity, and ethers.js to create a seamless user experience for minting and viewing NFTs with metadata stored on IPFS.",
     technologies: ["Solidity", "Javascript", "Hardhat", "Ethers.js", "React", "TailwindCSS"],
     demoLink: "https://ai-nft-gen.netlify.app/",
-    githubLink: "https://github.com/username/repo",
+    githubLink: "https://github.com/Ayush1832/AI-NFT-Generator",
   },
   {
     title: "Flash Loan",
