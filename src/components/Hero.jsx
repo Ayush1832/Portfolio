@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/Profile.png";
 import { motion } from "framer-motion";
-import { FaLink } from "react-icons/fa"; // Import link icon
+import { FaLink } from "react-icons/fa";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },

@@ -1,6 +1,6 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa"; // Make sure to install react-icons for GitHub icon
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
