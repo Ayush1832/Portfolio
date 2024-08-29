@@ -57,7 +57,7 @@ export const PROJECTS = [
   {
     title: "Flash Loan",
     image: project3,
-    description: "A personal portfolio website showcasing projects, skills, and contact information.",
+    description: "Developed a Solidity-based flash loan smart contract enabling instant, fee-less borrowing and repayment within a single transaction. Implemented logic to support arbitrage, liquidation, and leveraged trading opportunities on decentralized finance (DeFi) platforms. Optimized smart contract for gas efficiency and secure execution on the Ethereum blockchain.",
     technologies: ["Solidity", "Hardhat"],
     githubLink: "https://github.com/Ayush1832/Flash-Loans",
   },
@@ -69,7 +69,7 @@ export const PROJECTS = [
     demoLink: "https://ai-nft-gen.netlify.app/",
     githubLink: "https://github.com/Ayush1832/AI-NFT-Generator",
   },
-  ,
+  
   {
     title: "Fractional NFTs",
     image: project4,
