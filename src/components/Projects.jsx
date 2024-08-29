@@ -50,7 +50,7 @@ const Projects = () => {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600"
+                    className="inline-flex items-center px-4 py-2 bg-purple-500 text-white rounded-md shadow-md hover:bg-blue-600"
                   >
                     DEMO
                   </a>

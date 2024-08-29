@@ -66,17 +66,15 @@ export const PROJECTS = [
     title: "Flash Loan",
     image: project3,
     description: "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    demoLink: "https://demo-link.com",
-    githubLink: "https://github.com/username/repo",
+    technologies: ["Solidity", "Hardhat"],
+    githubLink: "https://github.com/Ayush1832/Flash-Loans",
   },
   {
-    title: "Fractionalised NFTs",
+    title: "Fractional NFTs",
     image: project4,
     description: "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "MySQL"],
-    demoLink: "https://demo-link.com",
-    githubLink: "https://github.com/username/repo",
+    technologies: ["Solidity", "Hardhat"],
+    githubLink: "https://github.com/Ayush1832/Fractional-NFTs",
   },
 ];
 
