@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.png";
 
 export const HERO_CONTENT = `I'm a blockchain enthusiast who dabbles in Solidity, Javascript, ReactJs and EthersJs. I spend my time dreaming up decentralized worlds where even my coffee runs on the blockchain. If it's decentralized, I've probably tried to make it cooler!`;
 
@@ -9,7 +10,16 @@ export const ABOUT_TEXT = `I am a blockchain enthusiast with a year of hands-on 
 
 export const EXPERIENCES = [
   {
-    year: "May 2024 - Present",
+    year: "September 2024 - Present",
+    role: "Blockchain Developer Intern",
+    company: "SoluLab",
+    description: `■ Developed secure and efficient browser wallet extension and character AI with smart contract integration on Ethereum and Polygon.
+■ Implemented token standards (ERC-20, ERC-1155, ERC-721) and seamless Web3 integration to enhance blockchain interactions in web applications.
+■ Built and tested APIs for robust blockchain-to-application communication, ensuring security and high performance in decentralized applications (DApps).`,
+    technologies: ["Solidity", "JavaScript", "Express.js", "Node.js", "MongoDB", "RESTful API"],
+  },
+  {
+    year: "May 2024 - August 2024",
     role: "Blockchain Intern",
     company: "SoluLab",
     description: `■ Design and implement smart contracts on blockchain platforms like Ethereum, Binance Smart Chain, and Polygon.
@@ -19,7 +29,7 @@ export const EXPERIENCES = [
 ■ Create and manage tokenization processes for various assets, including fungible and non-fungible tokens.
 ■ Integrate Web3 technologies into traditional web applications.
 ■ Develop APIs for seamless communication between blockchain and external applications.`,
-    technologies: ["Solidity", "JavaScript", "React.js", "Node.js", "MongoDB"],
+    technologies: ["Solidity", "JavaScript", "React.js", "Node.js"],
   },
   {
     year: "Jul 2021 - Aug 2023",
@@ -46,6 +56,14 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "NFTLend",
+    image: project5,
+    description: "Developed a decentralized lending platform enabling users to secure loans by staking NFTs as collateral. Built automated smart contracts for handling loan requests, interest calculations, and secure repayments. Integrated Moralis API to fetch real-time NFT metadata and price data, enhancing transparency and lending insights.",
+    technologies: ["Solidity", "Javascript", "Ethers.js", "React", "Moralis API"],
+    demoLink: "https://nft-lend.netlify.app/",
+    githubLink: "https://github.com/Ayush1832/NFTLend---Engage-4.0",
+  },
   {
     title: "Staking Dapp",
     image: project1,
