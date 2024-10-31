@@ -12,7 +12,7 @@ export const EXPERIENCES = [
   {
     year: "September 2024 - Present",
     role: "Blockchain Developer Intern",
-    company: "SoluLab",
+    company: "VDOIT Technologies",
     description: `■ Developed secure and efficient browser wallet extension and character AI with smart contract integration on Ethereum and Polygon.
 ■ Implemented token standards (ERC-20, ERC-1155, ERC-721) and seamless Web3 integration to enhance blockchain interactions in web applications.
 ■ Built and tested APIs for robust blockchain-to-application communication, ensuring security and high performance in decentralized applications (DApps).`,
