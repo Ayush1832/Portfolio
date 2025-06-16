@@ -3,6 +3,7 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
 
 export const HERO_CONTENT = `I'm a blockchain enthusiast who dabbles in Solidity, Javascript, ReactJs and EthersJs. I spend my time dreaming up decentralized worlds where even my coffee runs on the blockchain. If it's decentralized, I've probably tried to make it cooler!`;
 
@@ -16,7 +17,14 @@ export const EXPERIENCES = [
     description: `■ Developed secure and efficient browser wallet extension and character AI with smart contract integration on Ethereum and Polygon.
 ■ Implemented token standards (ERC-20, ERC-1155, ERC-721) and seamless Web3 integration to enhance blockchain interactions in web applications.
 ■ Built and tested APIs for robust blockchain-to-application communication, ensuring security and high performance in decentralized applications (DApps).`,
-    technologies: ["Solidity", "JavaScript", "Express.js", "Node.js", "MongoDB", "RESTful API"],
+    technologies: [
+      "Solidity",
+      "JavaScript",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "RESTful API",
+    ],
   },
   {
     year: "May 2024 - August 2024",
@@ -57,41 +65,82 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "NFTLend",
+    title: "DEX Aggregator",
+    image: project6,
+    description:
+      "Built a DEX aggregator using NextJS and Ethers.js to source optimal pricing from multiple decentralized exchanges. Implemented JavaScript algorithms to minimize slippage and enhance trading efficiency with a Tailwind CSS interface.",
+    technologies: [
+      "Javascript",
+      "Ethers.js",
+      "NextJS",
+      "TailwindCSS",
+      "React",
+    ],
+    demoLink: "https://dex-aggregator-an.vercel.app/",
+    githubLink: "https://github.com/Ayush1832/DEX-aggregator",
+  },
+  {
+    title: "Token ICO",
     image: project5,
-    description: "Developed a decentralized lending platform enabling users to secure loans by staking NFTs as collateral. Built automated smart contracts for handling loan requests, interest calculations, and secure repayments. Integrated Moralis API to fetch real-time NFT metadata and price data, enhancing transparency and lending insights.",
-    technologies: ["Solidity", "Javascript", "Ethers.js", "React", "Moralis API"],
-    demoLink: "https://nft-lend.netlify.app/",
-    githubLink: "https://github.com/Ayush1832/NFTLend---Engage-4.0",
+    description:
+      "Developed a decentralized ICO platform with Solidity smart contracts for secure token transfers, integrated with NextJS and React. Automated token distribution using Ethers.js and styled with Tailwind CSS for transparency and user trust.",
+    technologies: [
+      "Solidity",
+      "Javascript",
+      "Ethers.js",
+      "React",
+      "NextJS",
+      "TailwindCSS",
+    ],
+    demoLink: "https://ayush-ico-dapp.netlify.app/",
+    githubLink: "https://github.com/Ayush1832/Token-ICO",
   },
   {
     title: "Staking Dapp",
     image: project1,
-    description: "Developed a decentralized staking application that allows users to lock their tokens in a smart contract. Implemented reward mechanisms to incentivize long-term participation and token holding. Integrated secure contract management and real-time staking status updates. Utilized Solidity and Web3 technologies to ensure transparency and efficiency in the staking process.",
-    technologies: ["Solidity", "Javascript", "Hardhat", "Ethers.js", "React", "TailwindCSS"],
+    description:
+      "Developed a decentralized staking application that allows users to lock their tokens in a smart contract. Implemented reward mechanisms to incentivize long-term participation and token holding. Integrated secure contract management and real-time staking status updates. Utilized Solidity and Web3 technologies to ensure transparency and efficiency in the staking process.",
+    technologies: [
+      "Solidity",
+      "Javascript",
+      "Hardhat",
+      "Ethers.js",
+      "React",
+      "TailwindCSS",
+    ],
     demoLink: "https://stake-dapp-ayush.netlify.app/",
     githubLink: "https://github.com/Ayush1832/Staking-Dapp",
   },
   {
     title: "Flash Loan",
     image: project3,
-    description: "Developed a Solidity-based flash loan smart contract enabling instant, fee-less borrowing and repayment within a single transaction. Implemented logic to support arbitrage, liquidation, and leveraged trading opportunities on decentralized finance (DeFi) platforms. Optimized smart contract for gas efficiency and secure execution on the Ethereum blockchain.",
+    description:
+      "Developed a Solidity-based flash loan smart contract enabling instant, fee-less borrowing and repayment within a single transaction. Implemented logic to support arbitrage, liquidation, and leveraged trading opportunities on decentralized finance (DeFi) platforms. Optimized smart contract for gas efficiency and secure execution on the Ethereum blockchain.",
     technologies: ["Solidity", "Hardhat"],
     githubLink: "https://github.com/Ayush1832/Flash-Loans",
   },
   {
     title: "AI NFT Generator",
     image: project2,
-    description:  "Developed a full-stack blockchain application for generating AI-based images, uploading them to IPFS via NFT.Storage, and minting NFTs on Ethereum. Integrated Stable Diffusion AI model from Hugging Face for image generation based on user input. Utilized React.js, Solidity, and ethers.js to create a seamless user experience for minting and viewing NFTs with metadata stored on IPFS.",
-    technologies: ["Solidity", "Javascript", "Hardhat", "Ethers.js", "React", "TailwindCSS"],
+    description:
+      "Developed a full-stack blockchain application for generating AI-based images, uploading them to IPFS via NFT.Storage, and minting NFTs on Ethereum. Integrated Stable Diffusion AI model from Hugging Face for image generation based on user input. Utilized React.js, Solidity, and ethers.js to create a seamless user experience for minting and viewing NFTs with metadata stored on IPFS.",
+    technologies: [
+      "Solidity",
+      "Javascript",
+      "Hardhat",
+      "Ethers.js",
+      "React",
+      "TailwindCSS",
+    ],
     demoLink: "https://ai-nft-gen.netlify.app/",
     githubLink: "https://github.com/Ayush1832/AI-NFT-Generator",
   },
-  
+
   {
     title: "Fractional NFTs",
     image: project4,
-    description: "Created a Solidity smart contract for fractionalizing NFTs, enabling ERC721 tokens to be divided into fungible ERC20 tokens.Implemented functionality for NFT fractional ownership, sales, and redemption of fractional shares for Ether. Utilized OpenZeppelin libraries for secure token transfers, minting, and ownership management.",
+    description:
+      "Created a Solidity smart contract for fractionalizing NFTs, enabling ERC721 tokens to be divided into fungible ERC20 tokens.Implemented functionality for NFT fractional ownership, sales, and redemption of fractional shares for Ether. Utilized OpenZeppelin libraries for secure token transfers, minting, and ownership management.",
     technologies: ["Solidity", "Hardhat"],
     githubLink: "https://github.com/Ayush1832/Fractional-NFTs",
   },
