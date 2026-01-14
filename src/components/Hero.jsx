@@ -55,7 +55,7 @@ const Hero = () => {
               style={{ width: "500px", height: "auto", marginLeft: "20px" }}
             />
             <a
-              href="https://drive.google.com/file/d/1VW2HzrO_UVLdfZ4ljjrY3tfOU0KQrfnd/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1yiD3pKjhFgPpSoGtfhLyGoFBJSZa5j9Z/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center px-4 py-2 bg-purple-400 text-white rounded-md shadow-md hover:bg-purple-600 ml-40"

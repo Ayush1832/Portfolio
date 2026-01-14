@@ -13,7 +13,7 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
-      <div>
+      <div className="h-[700px] overflow-y-auto pr-4 custom-scrollbar">
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
@@ -25,7 +25,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="mb-6 rounded aspect-[16/11] pr-4"
+                className="mb-6 rounded aspect-[16/11] pr-4 object-cover"
               />
             </motion.div>
             <motion.div

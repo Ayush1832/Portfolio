@@ -21,18 +21,9 @@ const Education = () => {
               className="text-xl font-medium"
             >
               Veer Surendra Sai University of Technology, Burla
-              <p className="text-neutral-500">2020-2024</p>
-            </motion.h3>
-          </div>
-          <div>
-            <motion.h3
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="text-xl font-medium"
-            >
-              Delhi Public School, Damanjodi
-              <p className="text-neutral-500">2020</p>
+              <p className="text-neutral-500">
+                B.Tech in Electrical Engineering, 2024
+              </p>
             </motion.h3>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import walletMigrator from "../assets/projects/wallet-migrator.png";
+import escrowBot from "../assets/projects/escrow-bot.png";
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
@@ -5,95 +7,82 @@ import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/project-6.png";
 
-export const HERO_CONTENT = `I'm a blockchain enthusiast who dabbles in Solidity, Javascript, ReactJs and EthersJs. I spend my time dreaming up decentralized worlds where even my coffee runs on the blockchain. If it's decentralized, I've probably tried to make it cooler!`;
+export const HERO_CONTENT = `Blockchain Developer skilled in building dApps, DeFi protocols (lending, DEXes), NFT platforms, wallets, and cross-chain solutions across L1s and L2s. Proficient in Solidity, Rust, and modern frameworks with expertise in ERC-20/721/1155, account abstraction, smart contract security, gas optimization, and Web2 integration.`;
 
-export const ABOUT_TEXT = `I am a blockchain enthusiast with a year of hands-on experience in Solidity, JavaScript, React.js, and Ethers.js. My passion lies in creating decentralized solutions and exploring innovative blockchain projects. I am eager to leverage my skills to contribute to impactful and cutting-edge developments in the blockchain space.`;
+export const ABOUT_TEXT = `I am a Blockchain Developer skilled in building dApps, DeFi protocols (lending, DEXes), NFT platforms, wallets, and cross-chain solutions across L1s and L2s. Proficient in Solidity, Rust, and modern frameworks with expertise in ERC-20/721/1155, account abstraction, smart contract security, gas optimization, and Web2 integration.`;
 
 export const EXPERIENCES = [
   {
-    year: "September 2024 - Present",
-    role: "Blockchain Developer Intern",
+    year: "June 2025 - September 2025",
+    role: "Blockchain Developer",
+    company: "Quest Global Technologies",
+    description: `■ Built an EVM wallet browser extension supporting 5,000+ daily transactions with gasless payments using EIP-4337 paymasters.
+■ Designed and implemented a cross-chain bridging platform enabling seamless asset transfers between IBVM chain(L1), Ethereum, Polygon, and Layer 2 networks.
+■ Developed a blockchain explorer indexing 1M+ transactions with real-time search and dashboards.`,
+    technologies: ["EVM", "EIP-4337", "Cross-chain", "Ethereum", "Polygon"],
+  },
+  {
+    year: "September 2024 - June 2025",
+    role: "Blockchain Developer",
     company: "VDOIT Technologies",
-    description: `■ Developed secure and efficient browser wallet extension and character AI with smart contract integration on Ethereum and Polygon.
-■ Implemented token standards (ERC-20, ERC-1155, ERC-721) and seamless Web3 integration to enhance blockchain interactions in web applications.
-■ Built and tested APIs for robust blockchain-to-application communication, ensuring security and high performance in decentralized applications (DApps).`,
-    technologies: [
-      "Solidity",
-      "JavaScript",
-      "Express.js",
-      "Node.js",
-      "MongoDB",
-      "RESTful API",
-    ],
+    description: `■ Integrated blockchain-based authentication and optimized APIs for a character AI twin project, reducing latency by 20% while ensuring secure data handling.`,
+    technologies: ["Blockchain Authentication", "API Optimization", "Security"],
   },
   {
     year: "May 2024 - August 2024",
-    role: "Blockchain Intern",
+    role: "Blockchain Trainee",
     company: "SoluLab",
-    description: `■ Design and implement smart contracts on blockchain platforms like Ethereum, Binance Smart Chain, and Polygon.
-■ Ensure the security and efficiency of smart contracts through thorough testing.
-■ Implement and deploy decentralized applications (DApps) with secure and efficient smart contract logic.
-■ Implement token standards like ERC-20, ERC1155, and ERC-721.
-■ Create and manage tokenization processes for various assets, including fungible and non-fungible tokens.
-■ Integrate Web3 technologies into traditional web applications.
-■ Develop APIs for seamless communication between blockchain and external applications.`,
-    technologies: ["Solidity", "JavaScript", "React.js", "Node.js"],
+    description: `■ Worked on a token sale project on Polygon while refining smart contract development skills.`,
+    technologies: ["Polygon", "Smart Contracts", "Token Sale"],
   },
   {
-    year: "Jul 2021 - Aug 2023",
-    role: "Blockchain and Cybersecurity Blogger",
-    company: "HackTheTech",
-    description: `■ Platform sharing insights, news, and updates on blockchain technology trends.
-■ Involved in database administration and website design, and built the logic for a streamlined ad-serving platform that scaled.`,
-    technologies: ["HTML", "CSS", "React.js"],
-  },
-  {
-    year: "May 2023 - Jun 2023",
-    role: "Summer Intern",
-    company: "Hindustan Aeronautics Limited, Sunabeda",
-    description: `■ Worked on Sukhoi Saturn AL-31 engine and its components.`,
-    technologies: [],
-  },
-  {
-    year: "May 2022 - Jun 2022",
-    role: "Vocational Trainee",
-    company: "National Aluminium Company Limited",
-    description: `■ Managed databases and improved feedback system.`,
-    technologies: [],
+    year: "November 2023 - January 2024",
+    role: "Remote Blockchain Developer",
+    company: "Metacrafters",
+    description: `■ Contributed to the development of an NFT marketplace by writing and auditing Solidity smart contracts`,
+    technologies: ["Solidity", "NFT Marketplace", "Auditing"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "DEX Aggregator",
-    image: project6,
+    title: "Wallet Migrator",
+    image: walletMigrator,
     description:
-      "Built a DEX aggregator using NextJS and Ethers.js to source optimal pricing from multiple decentralized exchanges. Implemented JavaScript algorithms to minimize slippage and enhance trading efficiency with a Tailwind CSS interface.",
+      "Built a one-click wallet migrator using EIP-7702 to delegate EOAs and move ERC-20, ERC-721, and ERC-1155 assets in one transaction (with scam-token filtering). Designed an account abstraction pipeline that discovers balances, signs EIP-7702, builds a UserOperation, and executes atomically via Pimlico.",
     technologies: [
-      "Javascript",
-      "Ethers.js",
-      "NextJS",
-      "TailwindCSS",
-      "React",
+      "EIP-7702",
+      "ERC-20",
+      "ERC-721",
+      "ERC-1155",
+      "Account Abstraction",
+      "Pimlico",
     ],
-    demoLink: "https://dex-aggregator-an.vercel.app/",
-    githubLink: "https://github.com/Ayush1832/DEX-aggregator",
+    githubLink: "https://github.com/Ayush1832",
   },
   {
-    title: "Token ICO",
+    title: "Escrow Telegram Bot",
+    image: escrowBot,
+    description:
+      "Built a Telegram TON escrow: Tact contract + Node.js bot (TonConnect, Jettons). Designed on/off-chain ops: CLI flows, idempotent payouts, expiries, disputes.",
+    technologies: ["TON", "Tact", "Node.js", "TonConnect", "Jettons"],
+    githubLink: "https://github.com/Ayush1832",
+  },
+  {
+    title: "DEX-Aggregator",
+    image: project6,
+    description:
+      "Built a DEX aggregator using NextJS and Ethers.js to source optimal pricing from multiple decentralized exchanges. Reduced swap slippage by 12% using aggregation logic.",
+    technologies: ["NextJS", "Ethers.js", "DEX Aggregation"],
+    githubLink: "https://github.com/Ayush1832",
+  },
+  {
+    title: "ICO-dapp",
     image: project5,
     description:
-      "Developed a decentralized ICO platform with Solidity smart contracts for secure token transfers, integrated with NextJS and React. Automated token distribution using Ethers.js and styled with Tailwind CSS for transparency and user trust.",
-    technologies: [
-      "Solidity",
-      "Javascript",
-      "Ethers.js",
-      "React",
-      "NextJS",
-      "TailwindCSS",
-    ],
-    demoLink: "https://ayush-ico-dapp.netlify.app/",
-    githubLink: "https://github.com/Ayush1832/Token-ICO",
+      "Designed a decentralized ICO dApp for token sales with ERC-20 compliance, automated vesting schedules, and integrated IPFS for metadata storage.",
+    technologies: ["ERC-20", "Automated Vesting", "IPFS", "ICO"],
+    githubLink: "https://github.com/Ayush1832",
   },
   {
     title: "Staking Dapp",
@@ -147,7 +136,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Damanjodi, Koraput, Odisha, 763008",
+  address: "Odisha, India",
   phoneNo: "+91 8249325154",
   email: "ayushnayak1832@gmail.com",
 };
