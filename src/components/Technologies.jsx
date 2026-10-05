@@ -12,6 +12,12 @@ import {
   SiEthereum,
   SiPostgresql,
   SiDocker,
+  SiExpress,
+  SiMongodb,
+  SiRedis,
+  SiPolygon,
+  SiSolana,
+  SiBinance,
 } from "react-icons/si";
 import {
   FaJsSquare,
@@ -41,29 +47,41 @@ const techGroups = [
       { icon: <RiReactjsLine />, name: "React",       color: "text-cyan-400" },
       { icon: <SiNextdotjs />,   name: "Next.js",     color: "text-white" },
       { icon: <FaNodeJs />,      name: "Node.js",     color: "text-green-400" },
-      { icon: <SiEthereum />,    name: "Ethers.js",   color: "text-indigo-400" },
+      { icon: <SiExpress />,     name: "Express",     color: "text-slate-300" },
       { icon: <SiTailwindcss />, name: "Tailwind",    color: "text-cyan-500" },
     ],
   },
   {
     label: "Web3 Dev Tools",
-    cols: 5,
+    cols: 6,
     items: [
       { icon: <FaHardHat />,     name: "Hardhat",     color: "text-yellow-500" },
       { icon: <FaFlask />,       name: "Foundry",     color: "text-orange-400" },
-      { icon: <SiChainlink />,   name: "Chainlink",   color: "text-blue-500" },
+      { icon: <SiEthereum />,    name: "Ethers.js",   color: "text-indigo-400" },
       { icon: <FaShieldAlt />,   name: "OpenZeppelin",color: "text-purple-400" },
+      { icon: <SiChainlink />,   name: "Chainlink",   color: "text-blue-500" },
       { icon: <SiIpfs />,        name: "IPFS",        color: "text-teal-400" },
     ],
   },
   {
-    label: "Infra & Tooling",
+    label: "Chains",
     cols: 4,
+    items: [
+      { icon: <SiEthereum />,    name: "Ethereum",    color: "text-indigo-300" },
+      { icon: <SiPolygon />,     name: "Polygon",     color: "text-violet-400" },
+      { icon: <SiSolana />,      name: "Solana",      color: "text-emerald-400" },
+      { icon: <SiBinance />,     name: "BNB Chain",   color: "text-yellow-400" },
+    ],
+  },
+  {
+    label: "Infra & Data",
+    cols: 5,
     items: [
       { icon: <SiGraphql />,     name: "The Graph",   color: "text-pink-500" },
       { icon: <SiPostgresql />,  name: "PostgreSQL",  color: "text-sky-400" },
+      { icon: <SiMongodb />,     name: "MongoDB",     color: "text-green-500" },
+      { icon: <SiRedis />,       name: "Redis",       color: "text-red-500" },
       { icon: <SiDocker />,      name: "Docker",      color: "text-blue-400" },
-      { icon: <FaNodeJs />,      name: "REST APIs",   color: "text-green-300" },
     ],
   },
 ];
@@ -72,6 +90,7 @@ const techGroups = [
 const colsClass = {
   4: "grid-cols-2 sm:grid-cols-4",
   5: "grid-cols-3 sm:grid-cols-5",
+  6: "grid-cols-3 sm:grid-cols-6",
 };
 
 const Technologies = () => (

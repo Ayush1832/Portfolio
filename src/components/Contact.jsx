@@ -68,7 +68,7 @@ const Contact = () => {
               {item.href ? (
                 <a
                   href={item.href}
-                  className="text-slate-300 text-sm font-medium hover:text-purple-400 transition-colors duration-200 break-all"
+                  className="text-slate-300 text-[13px] font-medium hover:text-purple-400 transition-colors duration-200 break-all"
                 >
                   {item.value}
                 </a>

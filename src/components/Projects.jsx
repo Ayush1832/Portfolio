@@ -1,6 +1,13 @@
 import { PROJECTS } from "../constants";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaTrophy } from "react-icons/fa";
+
+const gradients = [
+  "from-purple-900/70 to-slate-900",
+  "from-cyan-900/60 to-slate-900",
+  "from-violet-900/70 to-slate-900",
+  "from-indigo-900/70 to-slate-900",
+];
 
 /* ─── Spotlight card ──────────────────────────────────────────── */
 function SpotlightCard({ project, index, featured = false, className = "" }) {
@@ -39,11 +46,29 @@ function SpotlightCard({ project, index, featured = false, className = "" }) {
           featured ? "h-60 lg:h-72" : "h-44"
         }`}
       >
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]"
-        />
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.07]"
+          />
+        ) : (
+          /* Gradient tile for projects without a screenshot */
+          <div
+            className={`w-full h-full flex items-center justify-center
+                        bg-gradient-to-br ${gradients[index % gradients.length]}
+                        transition-transform duration-700 group-hover:scale-[1.07]`}
+          >
+            <span className="text-5xl font-bold text-white/25 tracking-tight select-none">
+              {project.title
+                .split(" ")
+                .map((w) => w[0])
+                .join("")
+                .slice(0, 3)
+                .toUpperCase()}
+            </span>
+          </div>
+        )}
         {/* bottom fade into card bg */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#070411] via-[#070411]/20 to-transparent" />
 
@@ -51,6 +76,14 @@ function SpotlightCard({ project, index, featured = false, className = "" }) {
         <span className="absolute top-3 left-3 z-20 inline-flex items-center justify-center w-7 h-7 rounded-lg bg-black/60 backdrop-blur-md border border-white/10 text-purple-400 text-[10px] font-bold tracking-wide">
           {String(index + 1).padStart(2, "0")}
         </span>
+
+        {/* Hackathon badge */}
+        {project.badge && (
+          <span className="absolute bottom-3 left-3 z-20 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[10px] font-semibold backdrop-blur-md">
+            <FaTrophy size={9} />
+            {project.badge}
+          </span>
+        )}
 
         {/* ── Quick-action icons — fly down from top on hover ── */}
         <div className="absolute top-3 right-3 z-20 flex items-center gap-1.5">
@@ -147,7 +180,7 @@ const Projects = () => (
       Bento-style 3-col grid:
         Row 1 → [Featured — 2 cols] [Card 2 — 1 col]
         Row 2 → [Card 3] [Card 4] [Card 5]
-        Row 3 → [Card 6] [Card 7] [Card 8]
+        Rows 3+ → three cards per row (any remaining projects)
     */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {/* Featured */}
@@ -161,7 +194,7 @@ const Projects = () => (
       {/* Card 2 */}
       <SpotlightCard project={PROJECTS[1]} index={1} />
 
-      {/* Cards 3–8 */}
+      {/* Cards 3+ */}
       {PROJECTS.slice(2).map((project, i) => (
         <SpotlightCard key={i + 2} project={project} index={i + 2} />
       ))}

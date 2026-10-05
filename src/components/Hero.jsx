@@ -1,7 +1,7 @@
-import { HERO_CONTENT } from "../constants";
+import { HERO_CONTENT, CONTACT } from "../constants";
 import profilePic from "../assets/Profile.png";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFileAlt, FaChevronDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaChevronDown } from "react-icons/fa";
 
 const fadeUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 28 },
@@ -34,7 +34,7 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-60" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
             </span>
-            Available for opportunities
+            Available immediately
           </motion.div>
 
           {/* Name */}
@@ -55,7 +55,7 @@ const Hero = () => {
             animate="visible"
             className="text-xl lg:text-2xl font-light text-slate-500 mb-6 tracking-wide"
           >
-            Blockchain Developer
+            Blockchain & Full-Stack Developer
           </motion.p>
 
           {/* Description */}
@@ -76,16 +76,14 @@ const Hero = () => {
             className="flex flex-wrap items-center justify-center lg:justify-start gap-3"
           >
             <a
-              href="https://drive.google.com/file/d/1yiD3pKjhFgPpSoGtfhLyGoFBJSZa5j9Z/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`mailto:${CONTACT.email}`}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl
                          bg-gradient-to-r from-purple-600 to-violet-600 text-white text-sm font-semibold
                          hover:from-purple-500 hover:to-violet-500 hover:-translate-y-0.5
                          transition-all duration-300 shadow-lg shadow-purple-900/40 hover:shadow-purple-900/60"
             >
-              <FaFileAlt className="text-xs" />
-              View Resume
+              <FaEnvelope className="text-xs" />
+              Get in Touch
             </a>
 
             <a

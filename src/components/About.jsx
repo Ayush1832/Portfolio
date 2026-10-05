@@ -1,12 +1,12 @@
 import Lottie from "lottie-react";
 import blockchainAnimation from "../assets/animation.json";
-import { ABOUT_TEXT } from "../constants";
+import { ABOUT_TEXT, HACKATHONS, PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "2+", label: "Years of\nExperience" },
-  { value: "4", label: "Companies\nWorked At" },
-  { value: `15+`, label: "Projects\nShipped" },
+  { value: "3+", label: "Years of\nExperience" },
+  { value: `${HACKATHONS.length}`, label: "Hackathons\nWon" },
+  { value: `${PROJECTS.length}`, label: "Projects\nBuilt" },
 ];
 
 /* Render each paragraph of ABOUT_TEXT as its own <p> */
@@ -66,11 +66,11 @@ const About = () => (
           {/* Specialisation chips */}
           <div className="flex flex-wrap gap-2 mt-7 pt-6 border-t border-white/[0.06]">
             {[
-              "DeFi Protocols",
               "Account Abstraction",
-              "Smart Contract Security",
+              "DeFi Protocols",
               "Cross-chain",
-              "Gas Optimization",
+              "Escrow & Payments",
+              "Solana",
               "Web3 Full-stack",
             ].map((item) => (
               <span key={item} className="tech-tag">
